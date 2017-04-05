@@ -1,0 +1,78 @@
+
+/* 
+ * -----------------------------------------
+ * General
+ * -----------------------------------------
+ */
+
+$brand-primary: #2196F3 !default;
+$nav-logo-bg-color: #E0E0E0 !default;
+$body-bg: #fffcfe !default;
+$datatables-thead: #f1f1f1 !default;
+
+/* 
+ * -----------------------------------------
+ * Material
+ * -----------------------------------------
+ */
+
+$mdl-shadow--2dp: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !default;
+$mdl-shadow--3dp: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12) !default;
+$mdl-shadow--4dp: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2) !default;
+$mdl-shadow--6dp: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2) !default;
+$mdl-shadow--8dp: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2) !default;
+$mdl-shadow--16dp: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2) !default;
+
+/* 
+ * -----------------------------------------
+ * Custom
+ * -----------------------------------------
+ */
+ 
+ /* Media lib Hide certain buttons */
+
+.ui-widget-header.ui-corner-top.elfinder-toolbar > div:nth-child(4) > div:nth-child(5),
+.ui-widget-header.ui-corner-top.elfinder-toolbar > div:nth-child(7) > div:nth-child(3),
+.ui-widget-header.ui-corner-top.elfinder-toolbar > div:nth-child(11) {
+	display: none !important;
+}
+
+.ui-widget-header.ui-corner-top.elfinder-toolbar > div:nth-child(4),
+.ui-widget-header.ui-corner-top.elfinder-toolbar > div:nth-child(7) {
+	.elfinder-toolbar-button-separator:nth-child(4),
+	.elfinder-toolbar-button-separator:nth-child(2) {
+		border: 0 !important;
+	}
+}
+
+ 
+.elfinder-button-search input {
+  width: 208px !important;
+}
+
+#elfinder,
+td,
+textarea,
+input {
+  color: #222 !important;
+}
+
+.elfinder-button-search .ui-front.ui-widget.ui-widget-content {
+  display: none !important;
+}
+
+.elfinder-navbar {
+  height: 100% !important;
+}
+
+.elfinder-cwd-wrapper-empty .ui-droppable .elfinder-cwd::after {
+  margin: 5px;
+}
+
+/* 
+ * -----------------------------------------
+ * Includes
+ * -----------------------------------------
+ */
+
+@import "elfinder";
